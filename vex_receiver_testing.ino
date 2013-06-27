@@ -1,3 +1,22 @@
+/*
+ * Arduino sketch to test communicating with the
+ * Vex Robotics receiver.
+ * 
+ * Pinout (from Vex Receiver to Arduino):
+ *   * Vcc -> 5v
+ *   * Gnd -> Gnd
+ *   * Signal -> Pin2 (Interrupt 0)
+ *   * [unknown]
+ * 
+ * (Pin order on Vex Receiver is right to left
+ * when looking at front of connector.)
+ * 
+ * I also added a 4.1k resistor from Vcc to Signal.
+ *
+ * Author: Joseph Monti <joe.monti@gmail.com>
+ * Copyright Joseph Monti 2013
+ */
+
 const int INT_NUM = 0;
 
 const int NUM_CHANNELS = 6;
